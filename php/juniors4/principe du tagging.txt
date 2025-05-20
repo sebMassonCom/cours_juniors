@@ -1,0 +1,22 @@
+// recherche sur internet
+
+cadeau chocolat et décoration
+
+=> split / découper / hacher => HASH
+    cadeau
+    chocolat
+    decoration
+
+
+// ajouter une photo sur insta
+
+=> ajouter des mots clés :
+noham bg06 nice plage filles
+<tag>noham <tag>bg06 <tag>nice <tag>plage <tag>filles
+#noham #bg06 #nice #plage #filles
+
+
+=> le symbole dièse est utilisé pour hacher une chaîne
+=> un repère (tag en anglais) pour hacher une chaîne
+=> tag + hash
+=> hashtag

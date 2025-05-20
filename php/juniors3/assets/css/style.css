@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header,
+footer{
+    background: darkblue;
+    color: white;
+    padding: 2%;
+}
+main{
+    width: 80%;
+    padding: 5%;
+}
+main form{
+    width: 30%;
+    margin: auto;
+}
+main form input{
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    margin-bottom: 2em;
+    text-indent: 1em;
+}

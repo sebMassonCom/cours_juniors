@@ -1,0 +1,46 @@
+<?php
+
+echo '<pre>';
+var_dump($_POST);
+echo '<br>';
+print_r($_POST);
+echo '</pre>';
+
+
+
+$nom = htmlspecialchars($_POST['lastname']);
+echo $nom;
+
+// filtrer c'est inspecter un array et ne récupérer qu'une seule chose
+
+$prenom = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+echo $prenom;
+
+
+
+
+
+
+
+
+
+// restrictions / options
+$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+echo $email;
+
+if(empty($email)){
+    echo 'pb';
+}
+
+echo '<hr>';
+// les films ...
+include '../assets/db/films.php';
+foreach($_POST['film'] AS $f):
+    echo 'Tu aimes : '.$films[$f][0].'<br>';
+endforeach;
+
+echo '<hr>';
+// récupérer un fichier
+echo '<pre>';
+var_dump($_FILES);
+echo '</pre>';
